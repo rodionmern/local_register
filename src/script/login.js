@@ -2,8 +2,8 @@ var log_inInput, emailInput, passwordInput, loginInput, emailInput, passInput, l
 
 function register() {
 
-	log_inInput = document.getElementById('loginn').value;
-	passwordInput = document.getElementById('password').value;
+	log_inInput = document.getElementById('sign-up__login').value;
+	passwordInput = document.getElementById('sign-up__password').value;
 
 	if (log_inInput == "") {
 
@@ -23,7 +23,7 @@ function register() {
 			localStorage.setItem('pass', passwordInput);
 			typeof(local)
 
-			document.getElementById('login__succeed').innerHTML = `Вы успешно зарегистрировались под именем ${log_inInput}!`;
+			document.getElementById('sign__succeed').innerHTML = `Вы успешно зарегистрировались под именем ${log_inInput}!`;
 			setTimeout(register_succeed, 1000);
 		}
 
@@ -33,8 +33,8 @@ function register() {
 
 function login() {
 
-	loginInput = document.getElementById('login').value;
-	passInput = document.getElementById('pass').value;
+	loginInput = document.getElementById('sign-in__login').value;
+	passInput = document.getElementById('sign-in__password').value;
 
 	if (loginInput == "") {
 
@@ -50,7 +50,7 @@ function login() {
 
 		} else if (passInput == localStorage.getItem('pass')) {
 
-			document.getElementById("login__succeed").innerHTML = `${loginInput} вы успешно вошли!`;
+			document.getElementById("sign__succeed").innerHTML = `${loginInput} вы успешно вошли!`;
 			setTimeout(login_succeed, 1000);
 		} else if (passInput !== localStorage.getItem('pass')) {
 			console.error("Логин или пароль неверны.");

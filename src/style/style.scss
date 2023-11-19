@@ -46,14 +46,14 @@ body {
 	width: auto;
 }
 
-.reg_in {
+.sign_up {
 	width: 200px;
 
 	display: flex;
 	flex-direction: column;
 }
 
-.log_in {
+.sign_in {
 	width: 200px;
 
 	display: flex;
@@ -84,8 +84,7 @@ p {
 	color: white;
 }
 
-#reg__succeed,
-#login__succeed {
+#sign__succeed {
 	color: #03fc5a;
 }
 
