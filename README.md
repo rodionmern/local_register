@@ -6,4 +6,4 @@ hi, I'm Rodion! In this repository I'm trying realise login and register in _und
 
 - localStorage()
 - work with variables
-- with with if/else
+- work with if/else
