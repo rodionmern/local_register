@@ -48,14 +48,14 @@ function login() {
 			console.error("Пароль не введен.");
 			document.getElementById('error__succeed').innerHTML = `В поле пароля ничего нет, заполните его!`;
 
+		} else if (passInput !== localStorage.getItem('pass') || loginInput !== localStorage.getItem('login')) {
+			console.error("Логин или пароль неверны.");
+
+			document.getElementById("error__succeed").innerHTML = `Логин или пароль неверны`;
 		} else if (passInput == localStorage.getItem('pass')) {
 
 			document.getElementById("sign__succeed").innerHTML = `${loginInput} вы успешно вошли!`;
 			setTimeout(login_succeed, 1000);
-		} else if (passInput !== localStorage.getItem('pass')) {
-			console.error("Логин или пароль неверны.");
-
-			document.getElementById("error__succeed").innerHTML = `Логин или пароль неверны`;
 		}
 
 	}
