@@ -8,7 +8,7 @@
 
 body {
 	display: flex;
-	background-color: #212121;
+	background-color: #202020;
 }
 
 .main {
@@ -65,18 +65,19 @@ input {
 
 	width: 200px;
 	height: 40px;
-	background-color: #454545;
+	background-color: #151515;
 	color: white;
 
 	border: none;
+	border-radius: 50px;
 }
 
 button {
 	width: 200px;
-	height: 50px;
-	background-color: #343434;
+	height: 40px;
+	background-color: #101010;
 	color: white;
-	border-radius: 2px;
+	border-radius: 50px;
 	border: none;
 }
 
